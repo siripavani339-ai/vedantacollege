@@ -1,0 +1,211 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: italic;
+
+}
+
+
+/*navbar start*/
+
+
+.navbar{
+    position: sticky;
+    top: 0;
+   background-color:#000000;
+    color:whitesmoke;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.navlinks ul{
+    display: flex;
+    list-style: none;
+    padding: 15px;
+}
+
+.navlinks ul a{
+    text-decoration: none;
+    padding: 50px;
+    transition:all 0.10s ease;
+    font-style: italic;
+    font-size: larger;
+    color:#FCF8F8 ;
+    
+}
+
+.navlinks ul a:hover{
+    transform: scale(1.1);
+    color: navy;
+}
+
+.navlogo img{
+
+    height: 80px;
+    width: 70px;
+
+}
+
+/*container*/
+.Container{
+    
+    background-image: linear-gradient(45deg,black,black,black,#161E54, black,black);
+    margin: 1px auto;
+    filter: brightness(80%);
+    height: 210vh;
+    width: 100vw;
+
+    
+}
+
+/*herosection*/
+.herotext{
+
+   color: white; 
+    align-items: center;
+    padding-top: 140px;
+    padding-left: 450px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+h3{
+    color:red;
+    font-size: small;
+    padding-left: 230px;
+}
+
+h3:hover{
+transition: all 0.5s ease;
+    color: white;
+}
+h1{
+    font-style: italic;
+    color: white;
+    padding-top: 20px;
+    font-size: 85px;
+    font-size: xxxx-large;
+
+      
+}
+
+p{
+    margin-top: 25px;
+color: wheat;
+padding-left: 400px;
+font-size: large;
+}
+
+h4{
+    margin-top: 30px;
+    font-style: oblique;
+    color: whitesmoke;
+    padding-left: 500px;
+    font-size: small;
+}
+
+
+
+/* About Section */
+.about {
+    /*padding: 60px 8%;*/
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about-image img {
+
+    margin-top: 240px;
+    width: 200%;
+    max-width: 1300px;
+    border-radius: 10px;
+    padding-left: 180px;
+    filter: brightness(100%);
+    
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2{
+  color: red;
+  margin-top: 150px;
+  padding-left: 270px;
+  
+}
+
+.about-text h3{
+    color: white;
+    margin-right: 100px;
+    
+    
+    
+}
+
+/* Footer */
+
+footer {
+    margin-top: 85px;
+    /* background-image: linear-gradient(30deg,black,#161E54,black,black, black,black);  */
+    height: 35vh;
+    color: white;
+    text-align: center;
+    /* padding: 30px 20px; */
+    font-style: italic;
+}
+
+.footer-container h3 {
+    padding-bottom: 10px;
+    padding-right: 210px;
+    text-decoration: underline;
+    color: red;
+    font-size: larger;
+}
+
+.social-icons {
+    margin-bottom: 25px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #f4b400;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.social-icons a:hover {
+    color: white;
+}
+
+.social-icons i{
+    gap: 35px;
+    color: wheat;
+}
+ 
+i:hover{
+    color: #ccc;
+}
+
+footer p {
+    padding-right: 400px;
+    font-size: 14px;
+    margin: 8px auto;
+}
+
+
+
+    
+
+
