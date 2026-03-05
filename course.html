@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vedanta Solutions Pvt. Ltd. | Innovative Tech</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+}
+
+body {
+    background-color: #f4f7f6;
+    color: #333;
+    /* line-height: 1.6 */
+    font-style: italic;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+
+/* 1. Navbar */
+
+.navbar{
+    position: sticky;
+    top: 0;
+   background-color:#000000;
+    color:whitesmoke;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navlinks ul{
+    display: flex;
+    list-style: none;
+    padding: 15px;
+}
+
+.navlinks ul a{
+    text-decoration: none;
+    padding: 50px;
+    transition:all 0.10s ease;
+    font-style: italic;
+    font-size: large;
+    color:#FCF8F8 ;
+    
+}
+
+.navlinks ul a:hover{
+    transform: scale(1.1);
+    color: navy;
+}
+
+.navlogo img{
+
+    height: 80px;
+    width: 70px;
+
+}
+
+/* 2. Hero Section */
+.hero {
+    margin: 1px auto;
+    /* background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+                url(img/logo1.jpeg) no-repeat center center/cover; */
+                /* background-image: url(img/logo1.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                filter: contrast(80%); */
+
+  background-image: linear-gradient(45deg,black,#161E54,#000000,#000000,#000000);
+    filter: brightness(70%);
+    height: 80vh;
+    width: 100vw;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    background: #00d4ff;
+    color: #fff;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    background: #0099cc;
+}
+
+/* 3. Services Section */
+.services {
+    padding: 80px 0;
+    background: #fff;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+}
+
+.service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.service-card {
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    border-bottom: 4px solid #00d4ff;
+    transition: 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px navy;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+}
+
+.card-btn {
+    margin-top: 15px;
+    padding: 8px 20px;
+    border: 1px solid #00d4ff;
+    background: transparent;
+    color: #00d4ff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.card-btn:hover {
+    background: #755b15;
+    color: #fff;
+}
+
+/* 4. About Section */
+.about {
+    padding: 80px 0;
+    background: #f4f7f6;
+}
+
+.about-flex {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-img img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px #00d4ff;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+
+footer {
+    margin: 25px auto;
+    background-image: linear-gradient(30deg,black,#161E54,black,black, black,black); 
+    height: 35vh;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-style: italic;
+}
+
+.footer-container h3 {
+    
+    margin: 30px auto;
+    text-decoration: underline;
+    color: red;
+}
+
+.social-icons {
+    margin-bottom: 15px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: #f4b400;
+    margin: 0 10px;
+    font-weight: bold;
+}
+.social-icons a:hover {
+    color: white;
+}
+
+.social-icons i{
+    gap: 35px;
+    color: wheat;
+}
+ 
+i:hover{
+    color: #ccc;
+}
+
+
+
+footer p {
+    font-size: 14px;
+    margin: 8px auto;
+}
+    </style>
+</head>
+<body>
+
+  <div class="navbar">
+
+        <div class="navlogo">
+            <img src="img/logo2.jpeg">
+        </div>
+
+        <div class="navlinks">
+            <ul>
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Courses</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+        </div>  
+        
+    </div>
+    
+
+
+    <header class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Inginiting Minds </h1>
+                <p>BUILD YOUR FUTURE HERE 
+                    <h5>admissions open 2026</h5> </p>
+                <a href="#contact" class="btn">Get Started</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="service-grid">
+                <div class="service-card">
+                    <img src="img/bcom.jpeg" width="250px" height="auto">
+                    <h3>Bachelor of commerce</h3>
+                
+                    <p>Vedanta College offers a comprehensive 3-year B.Com program, focusing on accounting, finance, taxation, and management, making it an excellent career foundation(up to 90% in some reviews).</p>
+                    <button class="card-btn">Know More</button>
+                </div>
+                <div class="service-card">
+                    <img src="img/bca.jpeg" alt="" width="250px" height="auto">
+                    <h3>Bachelor of computer application</h3>
+                    <p>Vedanta college offers a comprehensive Bachelor of Computer Applications (BCA) is a 3-year undergraduate program focusing on software development, programming languages (Java, C++, Python).</p>
+                    <button class="card-btn">Know More</button>
+                </div>
+                <div class="service-card">
+                    <img src="img/ba.jpeg" alt="" width="250px" height="auto">
+                    <h3>Bachelor of arts</h3>
+                    <p>Vedanta College r offers a 4-year (8 semesters) B.A. program affiliated with the University of raichur focusing on subjects like English, Political Science, and Geography.</p>
+                    <button class="card-btn">Know More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container about-flex">
+            <!-- <div class="about-img">
+                <img src="images/vedanta lo" alt="Our Team" style="width: 300px; height: auto;">
+            </div> -->
+            <div class="about-text">
+
+                <h2>Vedanta Degree College</h2></p>
+                                                        
+                    at vedanta solutions we are dedicated to foresting excellent through top tier educaeducational environment our journey begins in our state of the art iaboratiories where theory practical Founded with a vision to bridge the gap between complex technology and business needs, Vedanta Solutions provides end-to-end digital transformation. We prioritize clean code, user-centric design, and scalable architecture.</p>
+                <p>With over 10 years of experience, our team of experts is dedicated to delivering excellence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+   <footer>
+    <div class="footer-container">
+        <h3>Vedanta Degree college</h3>
+
+        <div class="social-icons">
+
+            
+                       <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-twitter"></i>
+
+        </div>
+
+        <p>ANUSHA RAJENDRA PATIL NAGAR, MANTRALAYA ROAD OPP.NAVODAYA MEDICAL COLLEGE,<br><br> RAICHUR 
+          REACH US OUT @ 7406 839 000.</p>
+    </div>
+</footer>
+
+    
+</body>
+</html>
